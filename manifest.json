@@ -2,7 +2,7 @@
   "name": "jobsearchaz+",
   "version": "1.0",
   "description": "added some features that Jobsearch team should've added in the first place.",
-  "permissions": ["activeTab", "background"],
+  "permissions": ["activeTab"],
   "host_permissions": ["https://jobsearch.az/vacancies/*"],
   "background": {
     "service_worker": "background.js"
