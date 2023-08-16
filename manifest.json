@@ -1,0 +1,24 @@
+{
+  "name": "jobsearchaz+",
+  "version": "1.0",
+  "description": "added some features that Jobsearch team should've added in the first place.",
+  "permissions": ["activeTab", "background"],
+  "host_permissions": ["https://jobsearch.az/vacancies/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://jobsearch.az/vacancies/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "manifest_version": 3
+}
